@@ -1,0 +1,59 @@
+# Product Requirements Document (PRD): Insurance Broker Landing Page
+
+## 1. Project Overview
+The goal of this project is to develop a high-converting, professional landing page for an independent insurance broker. The website serves as a digital business card and lead generation tool, emphasizing trust, expertise, and a personalized approach to insurance services.
+
+## 2. Objectives
+*   **Establish Credibility:** Use a professional visual identity to build immediate trust with potential clients.
+*   **Lead Generation:** Convert visitors into prospects through clear Call-to-Actions (CTAs).
+*   **Personalization:** Humanize the brand by featuring the broker’s image prominently.
+*   **Information Clarity:** Clearly display the types of insurance offered.
+
+## 3. Target Audience
+*   Individuals seeking life, health, or auto insurance.
+*   Small to medium-sized business owners looking for corporate coverage.
+*   Clients looking for a personalized consultant rather than a generic corporate hotline.
+
+## 4. Visual Identity & Design
+*   **Primary Palette:** Dark Blue (Navy/Deep Blue tones) to convey stability, professional integrity, and security.
+*   **Tone of Voice:** Professional, approachable, and authoritative.
+*   **Key Imagery:** High-quality, professional photography of the broker to create a "human connection."
+
+## 5. Functional Requirements (Current & Planned)
+
+### 5.1. Hero Section (Current Focus)
+*   **Description:** The first fold of the website visible to the user.
+*   **Feature:** Background/Hero image featuring a professional male insurance broker.
+*   **Requirement:** The image must look modern and trustworthy. It should be integrated seamlessly with the dark blue color scheme.
+*   **Content:** Headline emphasizing expertise and a sub-headline describing the value proposition.
+
+### 5.2. Services/Insurance Details (Planned)
+*   **Feature:** A dedicated section or grid detailing specific insurance products (e.g., Life, Home, Auto, Health).
+*   **Requirement:** Brief descriptions for each service with iconography.
+
+### 5.3. Social Proof (Planned)
+*   **Feature:** Testimonials block.
+*   **Requirement:** A slider or grid showcasing reviews from satisfied clients to build "social proof."
+
+### 5.4. Lead Capture & Interaction (Planned)
+*   **Feature:** Simulated Insurance Calculator.
+*   **Requirement:** A basic interactive tool where users can input data to get an estimated quote or request a contact.
+*   **Feature:** Visible CTA buttons (e.g., "Get a Quote," "Talk to an Expert via WhatsApp").
+
+### 5.5. "About Me" Section (Refinement Needed)
+*   **Feature:** Professional bio of the broker.
+*   **Requirement:** Highlight years of experience, certifications, and the broker's mission statement.
+
+## 6. Roadmap & Next Steps
+1.  **Content Refinement:** Draft a high-impact headline for the Hero section.
+2.  **Service Detailing:** Define the top 4 insurance categories to be featured.
+3.  **Lead Magnet:** Implement a contact form or a simulated calculator.
+4.  **Social Proof:** Collect and format 3-5 client testimonials.
+5.  **Mobile Optimization:** Ensure the dark blue theme and hero image scale correctly for mobile devices.
+
+---
+
+**Approval & Versioning**
+*   **Version:** 1.1
+*   **Status:** In Development (Visual Identity & Hero Section Confirmed)
+*   **Project Lead:** Product Manager / Lead Designer

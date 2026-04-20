@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" style="scroll-padding-top: 5rem;" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog - Gustavo Mariano</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0f4c81", // Darker blue
+                        "primary-hover": "#0a365c",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0d121b] dark:text-white">
+<nav class="sticky top-0 z-50 border-b border-[#e7ebf3] bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-10">
+<div class="flex h-16 items-center justify-between">
+<div class="flex items-center gap-4 text-[#0d121b] dark:text-white">
+<div class="size-8 text-primary">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4C14 4 5 12 5 22C5 32 12 44 24 44C36 44 43 32 43 22C43 12 34 4 24 4ZM24 10C27.3137 10 30 12.6863 30 16C30 19.3137 27.3137 22 24 22C20.6863 22 18 19.3137 18 16C18 12.6863 20.6863 10 24 10ZM34.2 34.8C31.4 36.8 27.8 38 24 38C20.2 38 16.6 36.8 13.8 34.8C12.6 32.6 12 30 12 27.4C12 23.4 15.2 21.8 18 20.8C18.6 22.8 21 24 24 24C27 24 29.4 22.8 30 20.8C32.8 21.8 36 23.4 36 27.4C36 30 35.4 32.6 34.2 34.8Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-xl font-bold tracking-tight">Gustavo Mariano</span>
+</div>
+<div class="hidden md:flex items-center gap-8"><a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Início</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html#sobre">Sobre</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html#seguros">Seguros</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html#expertise">Cases</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html#video-section">Vídeo</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html#depoimentos">Depoimentos</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html#contato">Contato</a>
+<button class="bg-primary hover:bg-primary-hover text-white text-sm font-bold py-2 px-5 rounded-lg transition-colors">
+    Cotar Agora
+</button></div>
+<button class="md:hidden text-[#0d121b] dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+
+<section class="py-20 bg-white dark:bg-gray-900 min-h-[70vh]">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-10">
+    <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-black text-[#0d121b] dark:text-white mb-4">Nosso Blog</h1>
+        <p class="text-xl text-gray-600 dark:text-gray-400">Artigos, dicas e notícias sobre o mundo dos seguros e proteção patrimonial.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-background-light dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700">
+            <div class="h-48 bg-gray-200 dark:bg-gray-700 w-full relative group cursor-pointer overflow-hidden">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQiN1oXVQZTRspl5L5guS_LUHhRmW4z2T6n5lz7mzzph3R9G2fmIZLFtXEztZ-NgeC9gDVtZ6zPnQ4x3zGEEcdxpOw2ZgobkLrFDlMkjTLwEj4cWDrUovH5V2qMSVik5poO1eOAiz-LpnjIxvBf5h8hf7BPHRJvXH-fF7MO8liDiMaz-G0mFZ7224Ulnhl2_hZluCl_s_L85-AE9QfSg7Sy_mQGG4SeMtLWGfyGANitXhGdSFdpwnTtZBNcjxRFiqc5L12Aa5QvG86" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 text-xs font-bold rounded-lg shadow-sm">Seguro Empresarial</div>
+            </div>
+            <div class="p-6">
+                <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-2">15 Outubro, 2026</p>
+                <h3 class="text-xl font-bold mb-3 hover:text-primary cursor-pointer transition-colors">Como proteger o maquinário da sua indústria?</h3>
+                <p class="text-gray-500 dark:text-gray-400 text-sm mb-5 leading-relaxed">Descubra os principais pontos ao contratar um seguro completo para a sua linha de produção de maneira inteligente e sem falhas.</p>
+                <a href="#" class="text-primary font-bold text-sm flex items-center gap-1 hover:underline">Leia mais <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+            </div>
+        </div>
+        
+        <div class="bg-background-light dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700">
+            <div class="h-48 bg-gray-200 dark:bg-gray-700 w-full relative group cursor-pointer overflow-hidden">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC9QhOCMTDNR33labpuRZJBvIYDZdtlfCC6UDHnjVbV05VoAt_uY2hlds7pMIjywri2zFHEgePoBHDVAVWhS86X806IX0YTizu2dryaOS0HciznrZZZul09KNq9pw6_2uWKivYYMomCs-rks0PDG-9Pn59J02vO7KnPNwFbBzbe_JhmxB2YEp9NhpZOhaFgKeujHpTli4wT_xrymMlgFTfVTpzRItG64MnRN7rN91pBQdFbz_nwIgCYg0j2aaeu2-D5kkzjSaY-kGn" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 text-xs font-bold rounded-lg shadow-sm">Saúde</div>
+            </div>
+            <div class="p-6">
+                <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-2">10 Outubro, 2026</p>
+                <h3 class="text-xl font-bold mb-3 hover:text-primary cursor-pointer transition-colors">Vale a pena ter plano de saúde com coparticipação?</h3>
+                <p class="text-gray-500 dark:text-gray-400 text-sm mb-5 leading-relaxed">Entenda como funciona esse modelo financeiro e se ele se aplica de forma benéfica para o uso da sua família no dia a dia.</p>
+                <a href="#" class="text-primary font-bold text-sm flex items-center gap-1 hover:underline">Leia mais <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+            </div>
+        </div>
+
+        <div class="bg-background-light dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700">
+            <div class="h-48 bg-gray-200 dark:bg-gray-700 w-full relative group cursor-pointer overflow-hidden">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl8CiX5mIJBYwGbqB-APqGiIa_M_3w2NZBWG1Ng4n4AmITd1Z2eGfEXWhcYwvfeWCmjde8W7p2RYYJWLc1fsOf5h3YLGbDXVYHzhj-bWYcaxvY_uPutxQiat-bY90K40ggfaq6harfVQbpCuJy5H3rLTyn_DDoowRd71DsIKyzLdW2GB9c8QF5nyia_6PukV7udyzoXfVa_cevw6ycL_ICt3arcHghm7qnxANuHt-MAzs_Wb6u4ELlOMw24asjlvY4tCs0qfarHg7M" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 text-xs font-bold rounded-lg shadow-sm">Auto / Frota</div>
+            </div>
+            <div class="p-6">
+                <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-2">02 Outubro, 2026</p>
+                <h3 class="text-xl font-bold mb-3 hover:text-primary cursor-pointer transition-colors">O que realmente é coberto no Seguro de Frota?</h3>
+                <p class="text-gray-500 dark:text-gray-400 text-sm mb-5 leading-relaxed">Otimize a cobertura logística da sua empresa, entenda seus direitos no sinistro e proteja seus motoristas adequadamente.</p>
+                <a href="#" class="text-primary font-bold text-sm flex items-center gap-1 hover:underline">Leia mais <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<footer class="bg-white dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-10">
+<div class="grid md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-2 text-[#0d121b] dark:text-white mb-4">
+<div class="size-6 text-primary">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4C14 4 5 12 5 22C5 32 12 44 24 44C36 44 43 32 43 22C43 12 34 4 24 4ZM24 10C27.3137 10 30 12.6863 30 16C30 19.3137 27.3137 22 24 22C20.6863 22 18 19.3137 18 16C18 12.6863 20.6863 10 24 10ZM34.2 34.8C31.4 36.8 27.8 38 24 38C20.2 38 16.6 36.8 13.8 34.8C12.6 32.6 12 30 12 27.4C12 23.4 15.2 21.8 18 20.8C18.6 22.8 21 24 24 24C27 24 29.4 22.8 30 20.8C32.8 21.8 36 23.4 36 27.4C36 30 35.4 32.6 34.2 34.8Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-lg font-bold">Gustavo Mariano</span>
+</div>
+<p class="text-gray-500 text-sm leading-relaxed max-w-sm">
+                        Sua parceira em proteção patrimonial e familiar. Atuamos com ética e transparência para garantir a sua tranquilidade e a segurança do seu legado.
+                    </p>
+<div class="mt-6 flex gap-2">
+<span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded text-xs font-bold text-gray-600 dark:text-gray-400">SUSEP: 123456789</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-4">Seguros</h4>
+<ul class="flex flex-col gap-2 text-sm text-gray-500">
+<li><a class="hover:text-primary" href="index.html#">Automóvel</a></li>
+<li><a class="hover:text-primary" href="index.html#">Residencial</a></li>
+<li><a class="hover:text-primary" href="index.html#">Vida e Previdência</a></li>
+<li><a class="hover:text-primary" href="index.html#">Empresarial</a></li>
+<li><a class="hover:text-primary" href="index.html#">Saúde</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Contato</h4>
+<div class="flex flex-col gap-2 text-sm text-gray-500">
+<a class="hover:text-primary" href="mailto:gustavo@ldrseguros.com.br">gustavo@ldrseguros.com.br</a>
+<a class="hover:text-primary" href="tel:+5562996920050">(62) 9692-0050</a>
+<div class="flex gap-4 mt-4">
+<a class="w-10 h-10 rounded-full bg-background-light dark:bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-gray-500" href="https://www.instagram.com/gustavo_mariano" target="_blank" rel="noopener noreferrer">
+<span class="font-bold text-xs">IG</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-background-light dark:bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-gray-500" href="https://www.linkedin.com/in/gustavoamariano/" target="_blank" rel="noopener noreferrer">
+<span class="font-bold text-xs">IN</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-background-light dark:bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-gray-500" href="https://api.whatsapp.com/send/?phone=5562996920050&amp;text=Ol%C3%A1%2C+vi+os+depoimentos+de+seus+clientes+e+gostaria+de+conhecer+seus+servi%C3%A7os&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer">
+<span class="font-bold text-xs">WA</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-100 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
+<p>© 2024 Gustavo Mariano. Todos os direitos reservados.</p>
+<p>Corretora de Seguros Oficial.</p>
+</div>
+</div>
+</footer>
+</body></html>
