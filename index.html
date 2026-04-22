@@ -440,13 +440,13 @@
   #contato-grid { display: grid !important; grid-template-columns: 1fr 1.6fr; gap: 5rem; align-items: start; }
 }
 </style>
-<div style="display:flex; flex-direction:column; gap:2.5rem;">
-<div class="w-full">
+<div class="flex flex-col lg:flex-row gap-10">
+<div class="lg:w-1/2 flex flex-col gap-8">
 <div>
 <h2 class="text-3xl font-bold mb-4">Como podemos te ajudar?</h2>
 <p class="text-gray-600 dark:text-gray-400 text-lg">Leva menos de 2 minutos. Sem compromisso. Você recebe uma análise real do seu perfil de risco — e a cobertura ideal para o seu caso. <br><br> <strong>Comece agora →</strong></p>
 </div>
-<div class="flex flex-col gap-6 mt-8">
+<div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row flex-wrap gap-6 mt-8">
 <div class="flex items-center gap-4">
 <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
 <span class="material-symbols-outlined">mail</span>
@@ -476,7 +476,7 @@
 </div>
 </div>
 </div>
-<div class="w-full">
+<div class="lg:w-1/2">
 <!-- Interactive Expand Map -->
 <a href="https://www.google.com/maps/search/?api=1&query=R.+C-149,+665+-+Sala+3,+Jardim+Am%C3%A9rica,+Goi%C3%A2nia+-+GO" target="_blank" rel="noopener noreferrer" class="block w-full" title="Abrir no Google Maps">
 <div class="w-full relative" style="perspective: 1000px;" id="expand-map-container">
@@ -670,7 +670,7 @@
   <h3 class="text-lg font-bold mb-1">Qual tipo de seguro você precisa?</h3>
   <p class="text-sm text-gray-500 dark:text-gray-400 mb-5">Selecione uma opção para continuar</p>
   <div id="cot-step1">
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
       <button type="button" onclick="pickInsurance(this,'Automóvel')" class="ins-card flex flex-col items-center gap-2 p-4 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-900 hover:border-primary hover:bg-primary/5 transition-all">
         <span class="material-symbols-outlined text-3xl text-primary">directions_car</span><span class="text-sm font-semibold">Automóvel</span>
       </button>
