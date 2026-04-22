@@ -871,26 +871,41 @@ function revSubmit(){document.getElementById('form-rev').classList.add('hidden')
 </body>
 
 <script>
-// Global helper: navigate to contact section, switch tool tab, and optionally pre-select insurance type
+// Global helper: navigate to contact section, switch tool tab, and go directly to step 2 with type pre-filled
 function goToTool(tool, insuranceType) {
   // 1. Scroll to contact section
   const section = document.getElementById('contato');
   if (section) section.scrollIntoView({ behavior: 'smooth' });
 
-  // 2. Switch to the correct tab after a short delay to allow scroll
+  // 2. Switch to the correct tab and set state after scroll begins
   setTimeout(function() {
     if (typeof switchTool === 'function') switchTool(tool);
 
-    // 3. If a specific insurance type is provided and we're on cotacao, simulate a click
+    // 3. If a specific insurance type is provided, skip step 1 and go straight to step 2
     if (insuranceType && tool === 'cotacao') {
       setTimeout(function() {
+        // Hide step 1, show step 2
+        var step1 = document.getElementById('cot-step1');
+        var step2 = document.getElementById('cot-step2');
+        if (step1) step1.classList.add('hidden');
+        if (step2) step2.classList.remove('hidden');
+
+        // Update step 2 heading to show selected type
+        var heading = step2 ? step2.querySelector('h3') : null;
+        var subtext = step2 ? step2.querySelector('p') : null;
+        if (heading) heading.innerHTML = 'Seguro <span class="text-primary">' + insuranceType + '</span> — seus dados';
+        if (subtext) subtext.textContent = 'Preencha abaixo para receber sua análise personalizada.';
+
+        // Highlight the matching card in step 1 (for visual consistency if user goes back)
         var cards = document.querySelectorAll('.ins-card');
         cards.forEach(function(card) {
-          if (card.innerText.trim() === insuranceType) {
-            card.click();
+          card.classList.remove('border-primary','bg-primary/5','ring-2','ring-primary/30');
+          var label = card.querySelector('span.text-sm');
+          if (label && label.textContent.trim() === insuranceType) {
+            card.classList.add('border-primary','bg-primary/5','ring-2','ring-primary/30');
           }
         });
-      }, 300);
+      }, 200);
     }
   }, 600);
 }
