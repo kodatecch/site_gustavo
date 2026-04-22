@@ -438,6 +438,7 @@
 </div>
 <div class="w-full">
 <!-- Interactive Expand Map -->
+<a href="https://www.google.com/maps/search/?api=1&query=R.+C-149,+665+-+Sala+3,+Jardim+Am%C3%A9rica,+Goi%C3%A2nia+-+GO" target="_blank" rel="noopener noreferrer" class="block w-full" title="Abrir no Google Maps">
 <div class="w-full relative" style="perspective: 1000px;" id="expand-map-container">
   <div id="expand-map" class="relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 select-none transition-all duration-500 ease-out" style="height: 160px; transform-style: preserve-3d;">
     
@@ -501,9 +502,15 @@
             <line x1="9" x2="9" y1="3" y2="18"/><line x1="15" x2="15" y1="6" y2="21"/>
           </svg>
         </div>
-        <div class="flex items-center gap-1.5 px-2 py-1 rounded-full bg-gray-900/5 dark:bg-white/10 backdrop-blur-sm">
-          <div class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></div>
-          <span class="text-[10px] font-medium text-gray-500 dark:text-gray-400 tracking-wide uppercase">Live</span>
+        <div class="flex items-center gap-2">
+          <div class="flex items-center gap-1.5 px-2 py-1 rounded-full bg-gray-900/5 dark:bg-white/10 backdrop-blur-sm">
+            <div class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></div>
+            <span class="text-[10px] font-medium text-gray-500 dark:text-gray-400 tracking-wide uppercase">Live</span>
+          </div>
+          <div class="flex items-center gap-1 px-2 py-1 rounded-full bg-primary/10 backdrop-blur-sm">
+            <span class="material-symbols-outlined text-primary" style="font-size:11px;">open_in_new</span>
+            <span class="text-[10px] font-medium text-primary tracking-wide">Ver no Maps</span>
+          </div>
         </div>
       </div>
 
@@ -515,8 +522,9 @@
       </div>
     </div>
   </div>
-  
 </div>
+</div>
+</a>
 
 <style>
 .map-building { opacity: 0; transform: scale(0.8); transition: opacity 0.4s, transform 0.4s; }
