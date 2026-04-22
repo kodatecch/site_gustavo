@@ -77,7 +77,7 @@
     <p class="text-sm sm:text-base font-semibold truncate" id="banner-text">Carregando...</p>
   </div>
   <div class="flex items-center gap-3 shrink-0">
-    <a href="#contato" class="hidden sm:inline-flex items-center gap-1 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white text-sm font-bold px-4 py-1.5 rounded-full transition-all whitespace-nowrap" id="banner-cta">Proteja-se agora</a>
+    <a href="#contato" onclick="event.preventDefault(); goToTool('revisao', null)" class="hidden sm:inline-flex items-center gap-1 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white text-sm font-bold px-4 py-1.5 rounded-full transition-all whitespace-nowrap" id="banner-cta">Proteja-se agora</a>
     <button onclick="document.getElementById('urgency-banner').style.display='none'" class="text-white/70 hover:text-white transition-colors">
       <span class="material-symbols-outlined text-xl">close</span>
     </button>
@@ -822,11 +822,11 @@ function revSubmit(){document.getElementById('form-rev').classList.add('hidden')
 <div>
 <h4 class="font-bold mb-4">Seguros</h4>
 <ul class="flex flex-col gap-2 text-sm text-gray-500">
-<li><a class="hover:text-primary" href="#">Automóvel</a></li>
-<li><a class="hover:text-primary" href="#">Residencial</a></li>
-<li><a class="hover:text-primary" href="#">Vida e Previdência</a></li>
-<li><a class="hover:text-primary" href="#">Empresarial</a></li>
-<li><a class="hover:text-primary" href="#">Saúde</a></li>
+<li><a class="hover:text-primary cursor-pointer" onclick="goToTool('cotacao','Automóvel')">Automóvel</a></li>
+<li><a class="hover:text-primary cursor-pointer" onclick="goToTool('cotacao','Residencial')">Residencial</a></li>
+<li><a class="hover:text-primary cursor-pointer" onclick="goToTool('cotacao','Vida')">Vida e Previdência</a></li>
+<li><a class="hover:text-primary cursor-pointer" onclick="goToTool('cotacao','Empresarial')">Empresarial</a></li>
+<li><a class="hover:text-primary cursor-pointer" onclick="goToTool('cotacao','Saúde')">Saúde</a></li>
 </ul>
 </div>
 <div>
@@ -868,4 +868,32 @@ function revSubmit(){document.getElementById('form-rev').classList.add('hidden')
   </div>
 </a>
 
-</body></html>
+</body>
+
+<script>
+// Global helper: navigate to contact section, switch tool tab, and optionally pre-select insurance type
+function goToTool(tool, insuranceType) {
+  // 1. Scroll to contact section
+  const section = document.getElementById('contato');
+  if (section) section.scrollIntoView({ behavior: 'smooth' });
+
+  // 2. Switch to the correct tab after a short delay to allow scroll
+  setTimeout(function() {
+    if (typeof switchTool === 'function') switchTool(tool);
+
+    // 3. If a specific insurance type is provided and we're on cotacao, simulate a click
+    if (insuranceType && tool === 'cotacao') {
+      setTimeout(function() {
+        var cards = document.querySelectorAll('.ins-card');
+        cards.forEach(function(card) {
+          if (card.innerText.trim() === insuranceType) {
+            card.click();
+          }
+        });
+      }, 300);
+    }
+  }, 600);
+}
+</script>
+
+</html>
